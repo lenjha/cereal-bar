@@ -1,0 +1,11 @@
+PATRON
+  kegs are color-coded for easy readability, based on a factor such as price
+  display certain cereals different from others
+
+  EMPLOYEE
+    option to edit keg's properties
+    fill out form that adds keg to list
+    click a button whenever a pint is sold - decreases number of pints left by 1
+    see kegs with <10 pints left so it can be changed
+
+PATRON/EMPLOYEE - track how many pints are left in a keg (1 keg = 124 bowls)
