@@ -28,9 +28,9 @@ import { Keg } from './keg.model';
 export class NewKegComponent {
   @Output() newKegSender = new EventEmitter();
 
-  submitForm(name: string, sugarContent: number, price: number, availability: number) {
+  submitForm(name: string, sugarContent: string, price: string, availability: string) {
     var newKegToAdd: Keg = new Keg(name, parseInt(sugarContent), parseInt(price), parseInt(availability));
-    console.log(parseInt(availability));
+    console.log(typeof(availability));
     //Because our goal is to create a new Keg object anyway, it makes sense to construct it here before sending it upwards.
     console.log(newKegToAdd);
     this.newKegSender.emit(newKegToAdd);

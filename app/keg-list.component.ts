@@ -11,6 +11,7 @@ import { Keg } from './keg.model';
         <h3>{{currentKeg.name}}<button (click)="editButtonHasBeenClicked(currentKeg)">Update</button></h3>
         <h4>Sugar Content (g): {{currentKeg.sugarContent}}</h4>
         <h4>Price per bowl (USD): {{currentKeg.price}}</h4>
+        
       </div>
     </ul>
   `
