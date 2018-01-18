@@ -33,5 +33,7 @@ export class EditKegComponent {
 
   doneButtonClicked() {
     this.doneButtonClickedSender.emit();
+    console.log(this.childSelectedKeg);
   }
+
 }

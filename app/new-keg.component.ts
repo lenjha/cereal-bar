@@ -15,10 +15,10 @@ import { Keg } from './keg.model';
     </div>
     <div>
      <label>Keg Availability:</label>
-     <select #newAvailability>
-       <option [value]="1"> Low Availability </option>
-       <option [value]="2"> Medium Availability </option>
-       <option [value]="3"> High Availability </option>
+     <select type="number" #newAvailability>
+       <option value=1> Low Availability </option>
+       <option value=2> Medium Availability </option>
+       <option value=3> High Availability </option>
      </select>
      <button (click)="submitForm(newName.value, newSugarContent.value, newPrice.value, newAvailability.value)">Add</button>
     </div>
@@ -29,8 +29,10 @@ export class NewKegComponent {
   @Output() newKegSender = new EventEmitter();
 
   submitForm(name: string, sugarContent: number, price: number, availability: number) {
-    var newKegToAdd: Keg = new Keg(name, sugarContent, price, availability);
+    var newKegToAdd: Keg = new Keg(name, parseInt(sugarContent), parseInt(price), parseInt(availability));
+    console.log(parseInt(availability));
     //Because our goal is to create a new Keg object anyway, it makes sense to construct it here before sending it upwards.
+    console.log(newKegToAdd);
     this.newKegSender.emit(newKegToAdd);
   }
 }

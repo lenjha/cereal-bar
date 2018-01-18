@@ -1,0 +1,16 @@
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: monospace;
+  align-items: center;
+}
+
+img {
+  margin: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
