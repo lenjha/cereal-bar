@@ -3,7 +3,7 @@
   "description": "",
   "main": "",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/thatcat13/cereal-bar",
   "ignore": [
     "**/.*",
     "node_modules",
