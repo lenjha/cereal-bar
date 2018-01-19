@@ -26,7 +26,7 @@ export class KegListComponent {
   @Input() childKegList: Keg[];
   @Output() clickSender = new EventEmitter();
 
-  filterBySugarLevel: string = "diabeticFriendly";
+  filterBySugarLevel: string = "allKegs";
 
   onChange(optionFromMenu){
     this.filterBySugarLevel = optionFromMenu;

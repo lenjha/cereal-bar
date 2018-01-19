@@ -28,20 +28,4 @@ export class SugarContentPipe implements PipeTransform {
       return input;
     }
   }
-
-
-  // transform(input: Keg[], diabeticFriendly) {
-  //   var output: Keg[] = [];
-  //   if (diabeticFriendly === "allKegs") {
-  //     for (var i = 0; i < input.length; i++) {
-  //       if (input[i].sugarContent < 11) {
-  //         output.push(input[i]);
-  //       }
-  //     }
-  //     return output;
-  //     else {
-  //     }
-  //   }
-  //   return output;
-  // }
 }
