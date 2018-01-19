@@ -16,9 +16,9 @@ import { Keg } from './keg.model';
     <div>
      <label>Keg Availability:</label>
      <select type="number" #newAvailability>
-       <option value=1> Low Availability </option>
-       <option value=2> Medium Availability </option>
-       <option value=3> High Availability </option>
+       <option value=100> 1 Order </option>
+       <option value=200> 2 Orders </option>
+       <option value=300> 3 Orders </option>
      </select>
      <button (click)="submitForm(newName.value, newSugarContent.value, newPrice.value, newAvailability.value)">Add</button>
     </div>

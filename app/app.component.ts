@@ -20,12 +20,12 @@ export class AppComponent {
   selectedKeg = null;
 
   masterKegList: Keg[] = [
-    new Keg("Oreo-Os", 13, 2.60, 3),
-    new Keg("Froot Loops", 12, 2, 3),
-    new Keg('Golden Grahams', 11, 3, 3),
-    new Keg("Cap'n Crunch's Crunch Berries", 12, 3, 2),
-    new Keg('Trix', 12, 3.5, 3),
-    new Keg('Lucky Charms', 11, 3.5, 1),
+    new Keg("Oreo-Os", 13, 2.60, 8),
+    new Keg("Froot Loops", 12, 2, 55),
+    new Keg('Golden Grahams', 11, 3, 34),
+    new Keg("Life", 8, 2, 16),
+    new Keg('Trix', 12, 3.5, 300),
+    new Keg('Lucky Charms', 11, 3.5, 9),
   ];
 
   editKeg(clickedKeg) {
